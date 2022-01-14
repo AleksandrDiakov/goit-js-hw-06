@@ -22,3 +22,15 @@ button {
   padding: 8px 12px;
   cursor: pointer;
 }
+
+/* my style for Task-3 */
+.gallery {
+  display: flex;
+  list-style: none;
+}
+
+.gallery-img:not(:last-child) {
+  margin-right: 15px;
+}
+
+

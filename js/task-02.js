@@ -20,12 +20,15 @@ const ingredients = [
 ];
 
 const ingredientsList = document.querySelector("#ingredients");
+
 const ingredientsItems = ingredients.map(ingredient => {
   const item = document.createElement('li');
-  item.textContent = ingredient;
   item.classList.add("item");
+  item.textContent = ingredient;
   return item;
+
 });
 
-console.log(ingredientsList);
+
 ingredientsList.append(...ingredientsItems)
+console.log(ingredientsList);
