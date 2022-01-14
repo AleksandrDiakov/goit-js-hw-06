@@ -29,9 +29,17 @@ const imageGallaryElement = document.querySelector(`.gallery`);
 console.log(imageGallaryElement)
 
 const imageGallary = images.map(image => {
-return `<li class="gallery-img"><img src="${image.url}" alt="${image.alt}" width=200 height=100%></li>`;
+    return `<li class="gallery-img"><img src="${image.url}" alt="${image.alt}" width=200 height=100%></li>`;
+  
 })
-  .join("");
+    .join("");
   
 console.log(imageGallary);
 imageGallaryElement.insertAdjacentHTML("afterbegin", imageGallary);
+
+const gallaryStyle = document.querySelector(".gallery") 
+    gallaryStyle.style.display = "flex";
+    gallaryStyle.style.listStyle = "none";
+    
+const ImgStyle = document.querySelector(".gallery-img");
+    ImgStyle.style.marginRight = "15px";
