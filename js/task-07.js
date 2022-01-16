@@ -7,3 +7,11 @@
 // <br />
 // <span id="text">Abracadabra!</span>
 
+const inputControlEl = document.querySelector(`#font-size-control`);
+const textSize = document.querySelector(`#text`);
+    textSize.setAttribute(`style`, `font-size: ${inputControlEl.value}px`)
+
+inputControlEl.addEventListener(`input`, (event) => {
+    const fontSizeChange = event.currentTarget.value;
+    textSize.style.fontSize = `${event.currentTarget.value}px`
+})
