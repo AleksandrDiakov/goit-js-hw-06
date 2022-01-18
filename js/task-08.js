@@ -29,7 +29,34 @@ function handleSubmit(event) {
   if (email.value === "" || password.value === "") {
     return alert("Заполните пожалуйста поле Email и Password ");
   }
-
-  console.log(`Login: ${email.value}, Password: ${password.value}`);
+     const formEl = {
+        email: email.value,
+        password: password.value
+    }
+  console.log(formEl);
   event.currentTarget.reset();
 }
+
+
+// const formRef = document.querySelector('.login-form');
+
+// formRef.addEventListener('submit', onFormSubmit);
+
+// function onFormSubmit(event) {
+//     const email = event.currentTarget.elements.email.value;
+//     const password = event.currentTarget.elements.password.value;
+//     event.preventDefault();
+     
+//     if (email === '' || password === '') {
+//         alert('Please note that all fields are required!')
+//     } else {
+//         const formData = {
+//         email,
+//         password,
+//     }
+//         console.log(formData);
+        
+//     }
+    
+//     formRef.reset()
+// }

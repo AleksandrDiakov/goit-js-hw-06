@@ -29,7 +29,7 @@
 const input = document.querySelector(`#validation-input`);
 
 input.addEventListener(`blur`, (event) => {
-    event.currentTarget.value.length >= Number(input.dataset.length) ? 
+    event.currentTarget.value.length === Number(input.dataset.length) ? 
       input.setAttribute(`class`, `valid`) :
         input.setAttribute(`class`, `invalid`);
     
